@@ -1,6 +1,6 @@
 # loktra-solutions
 
-These ar solutions for the challenges given for Loktra
+These are the solutions for the challenges given for Loktra
 Use Python 2.7 for both of the problems
 
 1. Rehashing
