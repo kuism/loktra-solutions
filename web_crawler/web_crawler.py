@@ -6,12 +6,16 @@ from tabulate import tabulate
 class WebCrawler():
     def getOptions(self):
     	print "\n"
-        print tabulate([["Search", 1], ["Exit", 0]], headers=['Option', 'Key'])
+        print tabulate([["Search", 1], ["Search with Page No", 2], ["Exit", 0]], headers=['Option', 'Key'])
         key = raw_input("\nInput keys to continue:  ")
         page_no = 0
         try_again = False
-        if key == "1":
+        if key == "1" or key == "2":
             keyword = raw_input("Input the keyword:  ")
+            if key == "2":
+                page_no = int(
+                        raw_input(
+                            "Input page number:  "))
             current_search = Search(str(keyword))
             while True:
             	try:
